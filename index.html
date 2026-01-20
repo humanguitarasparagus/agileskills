@@ -78,20 +78,18 @@
             background: #f0f6ff;
         }
         
-       .skill-button-image {
+      .skill-button-image {
     position: absolute;
-    cursor: pointer !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
     border-radius: 8px;
-    opacity: 0.9;
+    opacity: 0.95;
     object-fit: contain;
     height: auto;
     max-width: 200px;
+    transition: opacity 0.2s ease;
 }
 
 .skill-button-image:hover {
-    transform: translateY(-1px) scale(1.05);
-    filter: brightness(1.1) drop-shadow(0 8px 16px rgba(16, 63, 107, 0.3));
     opacity: 1;
 }
         
