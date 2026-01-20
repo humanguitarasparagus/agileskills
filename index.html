@@ -89,11 +89,24 @@
             max-width: 200px;
         }
         
-        .skill-button-image:hover {
-        transform: translateY(-1px) scale(1.05);
-        filter: brightness(1.1) drop-shadow(0 8px 16px rgba(16, 63, 107, 0.3));
-        opacity: 1;
-    
+ .skill-button-image {
+    position: absolute;
+    cursor: pointer !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 8px;
+    opacity: 0.9;
+    object-fit: contain;
+    height: auto;
+    max-width: 200px;
+    padding: 5px; /* Add this - creates a buffer zone */
+}
+
+.skill-button-image:hover {
+    transform: translateY(-1px) scale(1.05);
+    filter: brightness(1.1) drop-shadow(0 8px 16px rgba(16, 63, 107, 0.3));
+    opacity: 1;
+    cursor: pointer !important;
+}
         }
         
         /* Button positioning */
